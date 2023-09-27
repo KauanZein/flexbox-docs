@@ -49,23 +49,21 @@ p {
 
 h1 {
     font-weight: bold;
-    font-size: 22pt;
+    font-size: 35pt;
     font-family: var(--fonte-secundaria);
     font-style: italic;
+    padding: 30px;
 }
 
-.container {
-    background-color: antiquewhite;
-    border: 1px solid #000;
+h2 {
+    font-weight: bold;
+    font-size: 25pt;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    padding: 50px;
 }
 
-.contido {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    border: 1px solid #000;
-}
-    
+
 .propriedade-titulo {
     border: 1px solid;
     height: 50px;
@@ -104,14 +102,46 @@ h1 {
     font-weight: bold;
 }
 
+.container {
+    background-color: antiquewhite;
+    border: 1px solid #000;
+}
+
+.contido {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+
 .display-flex {
     display: flex;
 
 }
 
-.justify-content {
+.justify-content-center {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
+}
+
+.justify-content-flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.justify-content-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justify-content-space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 
