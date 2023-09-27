@@ -41,14 +41,22 @@ header h1{
 }
 
 p {
-    color: 
     line-height: 1.2;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
 }
 
 .container {
     background-color: antiquewhite;
     border: 1px solid #000;
-    display: flex;
 }
 
 .contido {
@@ -61,9 +69,11 @@ p {
 .propriedade-titulo {
     border: 1px solid;
     height: 50px;
-    width: 100px;
+    width: 200px;
     font-size: 20pt;
+    padding: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .descricao-titulo {
@@ -89,9 +99,19 @@ p {
     text-align: center;
     border: 1px solid;
     height: 50px;
-    width: 800px;
+    width: 1000px;
     font-size: 15pt;
     font-weight: bold;
+}
+
+.display-flex {
+    display: flex;
+
+}
+
+.justify-content {
+    display: flex;
+    justify-content:center ;
 }
 
 
