@@ -63,6 +63,7 @@ h2 {
     padding: 50px;
 }
 
+/* Tabela */
 
 .propriedade-titulo {
     border: 1px solid;
@@ -101,6 +102,8 @@ h2 {
     font-size: 15pt;
     font-weight: bold;
 }
+
+/* Flexbox */
 
 .container {
     background-color: antiquewhite;
@@ -144,4 +147,17 @@ h2 {
     justify-content: space-between;
 }
 
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
 
+.flex-direction-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-direction-row {
+    display: flex;
+    flex-direction: row;
+}
