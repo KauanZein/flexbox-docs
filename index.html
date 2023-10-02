@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
+        <header id="topo-pagina">
             <h1>Flexbox</h1>
             <p class="descrição-propriedade">
             A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
@@ -116,7 +116,6 @@
         </div>
         
         <h1>flex-direction</h1>
-        
         <h2>column</h2>
         <div class="container flex-direction-column">
             <div class="contido">1</div>
@@ -142,6 +141,13 @@
             <div class="contido">3</div>
             <div class="contido">4</div>
             <div class="contido">5</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
         </div>
         
         <h2>row-reverse</h2>
@@ -151,6 +157,13 @@
             <div class="contido">3</div>
             <div class="contido">4</div>
             <div class="contido">5</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
         </div>
         
         <h1>align-items</h1>
@@ -183,20 +196,20 @@
         
         <h2>stretch</h2>
         <div class="container align-items-stretch">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="contido-stretch">1</div>
+            <div class="contido-stretch">2</div>
+            <div class="contido-stretch">3</div>
+            <div class="contido-stretch">4</div>
+            <div class="contido-stretch">5</div>
         </div>
         
         <h2>baseline</h2>
         <div class="container align-items-baseline">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align">Lorem, ipsum.</div>
+            <div class="item-align">Lorem ipsum dolor sit.</div>
+            <div class="item-align">Lorem ipsum dolor sit amet.</div>
+            <div class="item-align">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item-align">Lorem ipsum dolor sit amet consectetur.</div>
         </div>
         
         <h1>flex-wrap</h1>
@@ -207,6 +220,12 @@
             <div class="contido">3</div>
             <div class="contido">4</div>
             <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
         </div>
         
         <h2>wrap</h2>
@@ -216,6 +235,12 @@
             <div class="contido">3</div>
             <div class="contido">4</div>
             <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
         </div>
         
         <h2>wrap-reverse</h2>
@@ -224,7 +249,13 @@
             <div class="contido">2</div>
             <div class="contido">3</div>
             <div class="contido">4</div>
-            <div class="contido">5</div> 
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div> 
         </div>
         
         <h1>flex-flow</h1>
@@ -235,70 +266,138 @@
             <div class="contido">3</div>
             <div class="contido">4</div>
             <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div> 
+        </div>
+        
+        <h2>row-reverse wrap-reverse</h2>
+        <div class="container flex-flow-row-reverse-wrap-reverse">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div> 
         </div>
         
         <h1>align-content</h1>
         <h2>stretch</h2>
         <div class="container align-content-stretch">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>center</h2>
         <div class="container align-content-center">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>flex-start</h2>
         <div class="container align-content-flex-start">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>flex-end</h2>
         <div class="container align-content-flex-end">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>space-between</h2>
         <div class="container align-content-space-between">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>space-around</h2>
         <div class="container align-content-space-around">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
         
         <h2>space-evenly</h2>
         <div class="container align-content-space-evenly">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
+            <div class="item-align-content">1</div>
+            <div class="item-align-content">2</div>
+            <div class="item-align-content">3</div>
+            <div class="item-align-content">4</div>
+            <div class="item-align-content">5</div>
+            <div class="item-align-content">6</div>
+            <div class="item-align-content">7</div>
+            <div class="item-align-content">8</div>
+            <div class="item-align-content">9</div>
+            <div class="item-align-content">10</div>
+            <div class="item-align-content">11</div> 
         </div>
+
+        <footer>
+            <a href="#topo-pagina" class="botao-do-topo">Topo da pagina</a>
+            <p>Desenvolvido por<a href="https://github.com/KauanZein"> Kauan Zein</a></p> 
+        </footer>
     </body>
 </html>

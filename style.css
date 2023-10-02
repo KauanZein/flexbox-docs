@@ -9,11 +9,11 @@
 }
 
 :root {
-    --cor-primeira: 
-    --cor-segunda: 
-    --cor-terceira:
-    --cor-quarta:
-    --cor-quinta:
+    --cor-primeira: rgb(255, 163, 253); 
+    --cor-segunda:rgb(134, 93, 255);
+    --cor-terceira: rgb(238, 226, 53);
+    --cor-quarta: rgb(255, 255, 255);
+    --cor-quinta: rgb(140, 21, 151);
     --fonte-primaria:'Times New Roman', serif;
     --fonte-secundaria: Arial, Helvetica, sans-serif;
 }
@@ -25,6 +25,7 @@ body {
     font-size: 22pt;
     font-family: var(--fonte-secundaria);
     font-style: italic;
+    background-color: var(--cor-quinta);
 }
 
 header {
@@ -38,13 +39,15 @@ header h1{
     font-weight: bold;
     font-size: 48pt;
     align-self: center;
+    color: var(--cor-terceira);
 }
 
 p {
     line-height: 1.2;
-    font-size: 20px;
+    font-size: 20pt;
     padding: 30px;
     font-weight: bold;
+    color: var(--cor-quarta);
 }
 
 h1 {
@@ -53,6 +56,7 @@ h1 {
     font-family: var(--fonte-secundaria);
     font-style: italic;
     padding: 30px;
+    color: var(--cor-terceira);
 }
 
 h2 {
@@ -61,9 +65,14 @@ h2 {
     font-family: var(--fonte-secundaria);
     font-style: italic;
     padding: 50px;
+    color: var(--cor-quarta);
 }
 
 /* Tabela */
+
+table {
+   background-color: var(--cor-quarta); 
+}
 
 .propriedade-titulo {
     border: 1px solid;
@@ -107,25 +116,43 @@ h2 {
 
 .container {
     display: flex;
-    background-color: antiquewhite;
-    border: 1px solid #000;
+    background-color: var(--cor-primeira);
     padding: 50px;
     height: 500px;
     gap: 30px;
+    border-radius: 20px;
 }
 
 .contido {
     width: 80px;
     height: 80px;
-    background-color: aqua;
-    border: 1px solid #000;
+    background-color: var(--cor-segunda);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-quarta);
+    font-size: 20pt;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+}
+
+.contido-stretch {
+    background-color: var(--cor-segunda);
+    width: 300px;
+    border-radius: 30px;
+    color: var(--cor-quarta);
+    font-size: 40pt;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contido:nth-child(odd) {
     height: 130px;
-}
-
-.display-flex {
 }
 
 /* justify-content */
@@ -174,6 +201,26 @@ h2 {
 
 /* align-items */
 
+.item-align {
+    text-align: center;
+    display: flex;
+    padding: 5px;
+    background-color: var(--cor-segunda);
+    border-radius: 30px;
+    color: var(--cor-quarta);
+    font-size: 15pt;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+}
+
+.item-align:nth-child(odd) {
+    height: 130px;
+}
+
+.item-align:first-child {
+    padding-top: 40px;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -214,32 +261,82 @@ h2 {
     flex-flow: row-reverse wrap;
 }
 
+.flex-flow-row-reverse-wrap-reverse {
+    flex-flow: row-reverse wrap-reverse;
+}
+
 /* align content */
+
+.item-align-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: var(--cor-segunda);
+    border-radius: 30px;
+    color: var(--cor-quarta);
+    font-size: 20pt;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+}
 
 .align-content-stretch {
     align-content: stretch;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-center {
     align-content: center;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-flex-start {
     align-content: flex-start;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-flex-end {
     align-content: flex-end;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-space-between {
     align-content: space-between;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-space-around {
     align-content: space-around;
+    flex-wrap: wrap;
+    height: 20rem;
 }
 
 .align-content-space-evenly {
     align-content: space-evenly;
+    flex-wrap: wrap;
+    height: 20rem;
 }
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+}
+
+figcaption {
+    color: var(--cor-quarta);
+}
+
+.botao-do-topo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding: 25px 15px;
+    color: var(--cor-quarta);
+}   
