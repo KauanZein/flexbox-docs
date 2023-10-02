@@ -8,6 +8,8 @@
     text-align: initial;
 }
 
+/* personalizaçõ root */
+
 :root {
     --cor-primeira: rgb(255, 163, 253); 
     --cor-segunda:rgb(134, 93, 255);
@@ -17,6 +19,9 @@
     --fonte-primaria:'Times New Roman', serif;
     --fonte-secundaria: Arial, Helvetica, sans-serif;
 }
+
+/* personalização body */
+
 body {
     margin: 20px 50px;
     text-align: justify;
@@ -119,8 +124,9 @@ table {
     background-color: var(--cor-primeira);
     padding: 50px;
     height: 500px;
-    gap: 30px;
+    gap: 15px;
     border-radius: 20px;
+    width: 900px;
 }
 
 .contido {
@@ -267,6 +273,16 @@ table {
 
 /* align content */
 
+.container-align-content {
+    display: flex;
+    background-color: var(--cor-primeira);
+    padding: 50px;
+    height: 500px;
+    gap: 15px;
+    border-radius: 20px;
+    width: 900px;
+}
+
 .item-align-content {
     display: flex;
     justify-content: center;
@@ -321,6 +337,8 @@ table {
     flex-wrap: wrap;
     height: 20rem;
 }
+
+/* personalização footer */
 
 footer {
     display: flex;
