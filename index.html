@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flexbox - Documentação</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <header id="topo-pagina">
-            <h1>Flexbox</h1>
-            <p class="descrição-propriedade">O Flexbox é um conceito do CSS3 que visa organizar os elementos de uma página HTML dentro de seus containers de forma dinâmica. Ou seja, independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai, reorganizando-se e acordo com a necessidade.</p>
-            <p class="descrição-propriedade">Algumas propriedades como flex-direction, justify content e align-content já vem com os valores padrão.</p>
-        </header>
 
-        <table>
-            <tr>
-                <th class="propriedade-titulo">Propriedade</th>
-                <th class="descricao-titulo">Descrição</th>
-            </tr>
-            <tr>
-                <td class="propriedade">display: flex</td>
-                <td class="descricao">Especifica o tipo de caixa usada para um elemento HTML</td>
-            </tr>
-            <tr>
-                <td class="propriedade">justify-content</td>
-                <td class="descricao">Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal</td>
-            </tr>
-            <tr>
-                <td class="propriedade">flex-direction</td>
-                <td class="descricao">Especifica a direção dos itens flexíveis dentro de um flex container</td>
-            </tr>
-            <tr>
-                <td class="propriedade">align-items</td>
-                <td class="descricao">Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo cruzado</td>
-            </tr>
-            <tr>
-                <td class="propriedade">flex-wrap</td>
-                <td class="descricao">Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível</td>
-            </tr>
-            <tr>
-                <td class="propriedade">flex-flow</td>
-                <td class="descricao">Uma propriedade abreviada para flex-direction e flex-wrap</td>
-            </tr>
-            <tr>
-                <td class="propriedade">align-content</td>
-                <td class="descricao">Modifica o comportamento da propriedade flex-wrap. É semelhante a align-items, mas em vez de alinhar itens flexíveis, alinha linhas flexíveis</td>
-            </tr>
-        </table>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Documentação</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header id="topo-pagina">
+        <h1>Flexbox</h1>
+        <p class="descrição-propriedade">O Flexbox é um conceito do CSS3 que visa organizar os elementos de uma página
+            HTML dentro de seus containers de forma dinâmica. Ou seja, independente das suas dimensões eles sempre
+            manterão um layout flexível dentro do seu elemento pai, reorganizando-se e acordo com a necessidade.</p>
+        <p class="descrição-propriedade">Algumas propriedades como flex-direction, justify content e align-content já
+            vem com os valores padrão.</p>
+    </header>
+
+    <table>
+        <tr>
+            <th class="propriedade-titulo">Propriedade</th>
+            <th class="descricao-titulo">Descrição</th>
+        </tr>
+        <tr>
+            <td class="propriedade">display: flex</td>
+            <td class="descricao">Especifica o tipo de caixa usada para um elemento HTML</td>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="descricao">Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço
+                disponível no eixo principal</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="descricao">Especifica a direção dos itens flexíveis dentro de um flex container</td>
+        </tr>
+        <tr>
+            <td class="propriedade">align-items</td>
+            <td class="descricao">Alinha verticalmente os itens flexíveis quando os itens não usam todo o espaço
+                disponível no eixo cruzado</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-wrap</td>
+            <td class="descricao">Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço
+                suficiente para eles em uma linha flexível</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-flow</td>
+            <td class="descricao">Uma propriedade abreviada para flex-direction e flex-wrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade-align-content">align-content</td>
+            <td class="descricao-align-content">Modifica o comportamento da propriedade flex-wrap. É semelhante a align-items, mas em
+                vez de alinhar itens flexíveis, alinha linhas flexíveis</td>
+        </tr>
+    </table>
+
+    <section>
         <h1>display</h1>
         <h2>flex</h2>
         <div class="container display-flex">
@@ -57,7 +67,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h1>justify-content</h1>
         <h2>center</h2>
         <div class="container justify-content-center">
@@ -67,7 +77,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>flex start</h2>
         <div class="container justify-content-flex-start">
             <div class="contido">1</div>
@@ -76,7 +86,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>flex-end</h2>
         <div class="container justify-content-flex-end">
             <div class="contido">1</div>
@@ -85,7 +95,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>space-around</h2>
         <div class="container justify-content-space-around">
             <div class="contido">1</div>
@@ -94,7 +104,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>space-between</h2>
         <div class="container justify-content-space-between">
             <div class="contido">1</div>
@@ -103,7 +113,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>space-evenly</h2>
         <div class="container justify-content-space-evenly">
             <div class="contido">1</div>
@@ -112,7 +122,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h1>flex-direction</h1>
         <h2>column</h2>
         <div class="container flex-direction-column">
@@ -122,7 +132,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>column-reverse</h2>
         <div class="container flex-direction-column-reverse">
             <div class="contido">1</div>
@@ -131,7 +141,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>row</h2>
         <div class="container flex-direction-row">
             <div class="contido">1</div>
@@ -147,7 +157,7 @@
             <div class="contido">10</div>
             <div class="contido">11</div>
         </div>
-        
+
         <h2>row-reverse</h2>
         <div class="container flex-direction-row-reverse">
             <div class="contido">1</div>
@@ -163,7 +173,7 @@
             <div class="contido">10</div>
             <div class="contido">11</div>
         </div>
-        
+
         <h1>align-items</h1>
         <h2>center</h2>
         <div class="container align-items-center">
@@ -173,7 +183,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>flex-start</h2>
         <div class="container align-items-flex-start">
             <div class="contido">1</div>
@@ -182,7 +192,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>flex-end</h2>
         <div class="container align-items-flex-end">
             <div class="contido">1</div>
@@ -191,7 +201,7 @@
             <div class="contido">4</div>
             <div class="contido">5</div>
         </div>
-        
+
         <h2>stretch</h2>
         <div class="container align-items-stretch">
             <div class="contido-stretch">1</div>
@@ -200,7 +210,7 @@
             <div class="contido-stretch">4</div>
             <div class="contido-stretch">5</div>
         </div>
-        
+
         <h2>baseline</h2>
         <div class="container align-items-baseline">
             <div class="item-align">Lorem, ipsum.</div>
@@ -209,7 +219,7 @@
             <div class="item-align">Lorem ipsum dolor sit amet consectetur.</div>
             <div class="item-align">Lorem ipsum dolor sit amet consectetur.</div>
         </div>
-        
+
         <h1>flex-wrap</h1>
         <h2>nowrap</h2>
         <div class="container flex-wrap-nowrap">
@@ -225,7 +235,7 @@
             <div class="contido">10</div>
             <div class="contido">11</div>
         </div>
-        
+
         <h2>wrap</h2>
         <div class="container flex-wrap-wrap">
             <div class="contido">1</div>
@@ -240,7 +250,7 @@
             <div class="contido">10</div>
             <div class="contido">11</div>
         </div>
-        
+
         <h2>wrap-reverse</h2>
         <div class="container flex-wrap-wrap-reverse">
             <div class="contido">1</div>
@@ -253,9 +263,9 @@
             <div class="contido">8</div>
             <div class="contido">9</div>
             <div class="contido">10</div>
-            <div class="contido">11</div> 
+            <div class="contido">11</div>
         </div>
-        
+
         <h1>flex-flow</h1>
         <h2>row-reverse wrap</h2>
         <div class="container flex-flow-row-reverse-wrap">
@@ -269,9 +279,9 @@
             <div class="contido">8</div>
             <div class="contido">9</div>
             <div class="contido">10</div>
-            <div class="contido">11</div> 
+            <div class="contido">11</div>
         </div>
-        
+
         <h2>row-reverse wrap-reverse</h2>
         <div class="container flex-flow-row-reverse-wrap-reverse">
             <div class="contido">1</div>
@@ -284,9 +294,9 @@
             <div class="contido">8</div>
             <div class="contido">9</div>
             <div class="contido">10</div>
-            <div class="contido">11</div> 
+            <div class="contido">11</div>
         </div>
-        
+
         <h1>align-content</h1>
         <h2>stretch</h2>
         <div class="container-align-content align-content-stretch">
@@ -300,9 +310,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>center</h2>
         <div class="container-align-content align-content-center">
             <div class="item-align-content">1</div>
@@ -315,9 +325,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>flex-start</h2>
         <div class="container-align-content align-content-flex-start">
             <div class="item-align-content">1</div>
@@ -330,9 +340,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>flex-end</h2>
         <div class="container-align-content align-content-flex-end">
             <div class="item-align-content">1</div>
@@ -345,9 +355,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>space-between</h2>
         <div class="container-align-content align-content-space-between">
             <div class="item-align-content">1</div>
@@ -360,9 +370,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>space-around</h2>
         <div class="container-align-content align-content-space-around">
             <div class="item-align-content">1</div>
@@ -375,9 +385,9 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
-        
+
         <h2>space-evenly</h2>
         <div class="container-align-content align-content-space-evenly">
             <div class="item-align-content">1</div>
@@ -390,12 +400,14 @@
             <div class="item-align-content">8</div>
             <div class="item-align-content">9</div>
             <div class="item-align-content">10</div>
-            <div class="item-align-content">11</div> 
+            <div class="item-align-content">11</div>
         </div>
+    </section>
 
-        <footer>
-            <a href="#topo-pagina" class="botao-do-topo">Topo da pagina</a>
-            <p>Desenvolvido por<a href="https://github.com/KauanZein"> Kauan Zein</a></p> 
-        </footer>
-    </body>
+    <footer>
+        <a href="#topo-pagina" class="botao-do-topo">Topo da pagina</a>
+        <p>Desenvolvido por<a href="https://github.com/KauanZein"> Kauan Zein</a></p>
+    </footer>
+</body>
+
 </html>
